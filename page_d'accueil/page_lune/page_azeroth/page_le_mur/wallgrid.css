@@ -1,0 +1,850 @@
+
+/*############################*/
+/* CODE POUR TOUTE LA PAGE    */
+/*############################*/
+
+body{
+padding:0px;
+margin: 0px;
+  }
+
+  p{
+color: black;
+margin:0px;
+  }
+
+/*############################*/
+/* CODE POUR TOUTE LA PAGE    */
+/*############################*/
+
+
+
+
+
+
+
+/*############################*/
+/*  CONTAINER PARENT CSS GRID */
+/*############################*/
+
+.supergrid{
+display: grid;
+}
+
+/*############################*/
+/*  CONTAINER PARENT CSS GRID */
+/*############################*/
+
+
+
+
+
+
+/*############################*/
+/*          NAVBAR            */
+/*############################*/
+
+
+/**  Code pour toute la navbar  **/
+nav{
+background-color: rgba(0, 0, 0, 0.835);
+height: 40px;
+font-family: 'Raleway', sans-serif;
+}
+/**  Code pour toute la navbar  **/
+
+
+
+/**  Code pour gerer les Liste à puces de la Navbar **/
+.navbar {
+align-items: baseline;
+display:flex; 
+justify-content: left;
+font-family: 'Cinzel', serif;
+font-size: 20px;
+height: 40px;
+color:rgb(80, 255, 232);text-shadow: black 2px 2px 2px;  
+font-size:1px;
+}
+/**  Code pour gerer les listes à puces de la Navbar **/
+
+
+
+/** Code des listes à puces contenu de la Navbar **/
+
+ul {
+list-style-type: none;
+font-size: 26px;
+margin-bottom: 0px;
+}
+          
+.navbar a {
+color:rgb(80, 255, 232); text-shadow: black 2px 2px 2px; 
+font-size: 26px;
+}
+/** Code des listes à puces contenu de la Navbar **/
+
+
+
+/**  Effet coulissant parti "Nos destinations" de la navbar  **/
+.dropdown {
+margin-left: -30px;
+max-height: 49px; 
+overflow: hidden;
+transition: max-height ease 0.3s;
+ }
+/**  Effet coulissant parti "Nos destinations" de la navbar  **/
+
+
+
+
+/**  Effet coulissant 'partie hover' de "Nos destinations" de la navbar  **/
+.dropdown:hover {
+max-height: 290px;
+z-index: 999999;
+transition: max-height ease 0.3s;
+}
+/**  Effet coulissant 'partie hover' de "Nos destinations" de la navbar  **/
+       
+
+
+/**  Ligne Hr de la navbar **/
+.deco{
+    background-color: rgb(255, 76, 5);
+    width: 100%;
+    height: 3px;
+    margin:0px;
+    padding:0px;
+    }
+/**  Ligne Hr de la navbar **/
+
+
+/*############################*/
+/*            NAVBAR          */
+/*############################*/
+
+
+
+
+
+
+/*############################*/
+/*          BANNIERE          */
+/*############################*/
+
+/** Container Banniere (parent) **/
+.grid2{
+display : grid;
+grid-template-columns: 1fr;
+height: 400px;
+margin-top:0px;
+background-image: url("https://image.noelshack.com/fichiers/2019/10/4/1551981282-got-mur.jpg");
+background-image: cover; 
+background-position:center;
+}
+/** Container Banniere (parent) **/
+
+
+/** Titre principal (enfant) **/
+h1 {
+margin-left:25px;
+font-size: 70px;
+font-family: 'Over the Rainbow', cursive; 
+padding-top: 80px;
+}
+/** Titre principal (enfant) **/
+
+/*** Effet rotation Titre h1 **/
+
+h1{
+
+  
+    position: relative;
+    -webkit-animation: mymove 10s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 10s infinite;
+  }
+  
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes mymove {
+    0%   {top: 0px; left: 0px; color: red;}
+    25%  {top: 0px; left: 100px; color: blue;}
+    50%  {top: 100px; left: 100px; color: yellow;}
+    75%  {top: 100px; left: 0px; color: green;}
+    100% {top: 0px; left: 0px; color: red;}
+  }
+  
+  /* Standard syntax */
+  @keyframes mymove {
+    0%   {top: 0px; left: 0px; color: red;}
+    25%  {top: 0px; left: 100px; color: blue;}
+    50%  {top: 100px; left: 100px; color: yellow;}
+    75%  {top: 100px; left: 0px; color: green;}
+    100% {top: 0px; left: 0px; color: red;}
+  }
+
+/*** Effet rotation Titre h1 **/
+
+
+/** Class bootstrap Flocon de neige sur le titre (enfant ) **/
+.glace {
+  color: rgb(255, 255, 255);
+  }
+  /** Class bootstrap Flocon de neige sur le titre (enfant) **/
+
+
+
+/**   Hover sur Titre h1  **/
+h1:hover{
+color: rgb(255, 72, 231);
+}
+/**   Hover sur Titre h1  **/
+
+
+
+/**   Hover sur flocon  **/
+
+  i:hover{
+  color: rgb(10, 6, 243);
+  
+  }  
+/**   Hover sur flocon  **/
+
+
+/** ligne hr decoration **/
+.deco2{
+  height: 1px;
+  border: 0;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  margin:0px;
+  }
+  /** ligne hr decoration **/
+
+
+          
+/*############################*/
+/*          BANNIERE          */
+/*############################*/
+
+
+
+/*############################*/
+/*      TEXTE BANNIERE        */
+/*############################*/
+
+/**    Container Texte banniere   **/
+.grid3{
+display : grid;
+grid-template-columns: 1fr;
+height: 600px;
+margin-top: 70px; 
+margin-bottom:70px;
+text-align: center;
+color: blue;
+font-size: 15px;
+text-align: justify;
+text-align: center;
+
+}
+/**    Container Texte banniere   **/
+
+
+
+/**    Effet PULSE sur banniere texte   **/
+.grid3 {
+  animation: pulse 6s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    background-color: rgba(98, 177, 170, 0.281);
+  }
+  100% {
+    background-color: rgb(255, 255, 255);
+  }
+}
+/**    Effet PULSE sur banniere texte   **/
+
+
+/**   Hover sur Sous titre   **/
+.soustitre:hover{
+color: blue;
+}
+/**   Hover sur sous titre  **/
+
+
+/**    Sous titre   **/
+p.soustitre{
+font-family:'Over the Rainbow', cursive;
+color:black;
+font-size:50px;
+}
+/**    Sous titre   **/
+
+
+/**    Citation   **/
+.citation{
+color: orange;
+}
+/**    Citation   **/
+
+
+/*############################*/
+/*      TEXTE BANNIERE        */
+/*############################*/
+
+
+/*############################*/
+/*            BUTTON          */
+/*############################*/
+
+.tournicotti {
+  background-color: rgba(240, 1, 1, 0.529);
+  display: flex;
+  margin: auto;
+  height: 5rem;
+  width: 19rem;
+  border-radius: 20px;
+  font-size: 2rem;
+  color: rgb(76, 240, 224);
+  opacity: 0.87;
+  }
+
+
+  /** effet pulse **/
+
+.tournicotti {
+animation: pulse 6s infinite;
+}
+@keyframes pulse {
+  50% {
+    background-color: rgba(255, 17, 0, 0.281);
+  }
+  100% {
+    background-color: rgb(64, 250, 195);
+  }
+}
+  /** effet pulse **/
+
+
+
+
+/*############################*/
+/*           BUTTON           */
+/*############################*/
+
+
+
+/*############################*/
+/*     PREPARE TON  VOYAGE    */
+/*############################*/
+
+/**   Titre Prepare ton voyage  **/
+.grid4{
+display : grid;
+grid-template-columns:1fr;
+padding: 0px;
+height: 65px;
+margin-top: 50px; 
+margin-bottom:50px;
+text-align: center;
+font-family:'Over the Rainbow', cursive;
+font-size: 35px;
+background-color:rgb(190, 189, 189);
+}
+
+/**   Titre Prepare ton voyage  **/
+
+
+/**   Hover sur Titre   **/
+.grid4 p:hover{
+color: blue;
+}
+/**   Hover sur Titre   **/
+
+
+
+
+/**  container grid Prepare ton voyage   **/
+.grid5{
+display : grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 15px;
+margin:7%;
+height: 250px;
+}
+/**   container grid prepare ton voyage   **/
+
+
+
+
+/**    Effet PULSE sur banniere texte   **/
+
+
+.contaireprepare {
+animation: pulse 6s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    background-color: rgba(98, 177, 170, 0.281);
+  }
+  100% {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+/**    Effet PULSE sur banniere texte   **/
+
+
+
+
+/**   photos prepare ton voyage    **/
+.tof1{
+background-image: url("https://farm2.staticflickr.com/1728/42165076364_0773881956_o.jpg");
+background-size: cover;
+background-position:center;
+}
+
+.tof2{
+background-image: url("http://www.w3sh.com/wordpress/wp-content/uploads/2013/12/Custom-Built-Back-to-the-Future-DeLorean-0.jpg");
+background-size: cover;
+background-position:center;
+}
+
+.tof3{
+background-image: url("https://qph.fs.quoracdn.net/main-qimg-4408b3a5cfcebd950db8d48caf752f27");
+background-size: cover;
+background-position:center;
+}
+
+/**  photo prepare ton voyage    **/
+
+
+
+/**   texte prepare ton voyage   **/
+
+.grid6{
+color:black;
+font-size: 15px;
+text-align: center;
+}
+/**   texte prepare ton voyage   **/
+
+
+
+/*############################*/
+/*   PREPARE TON VOYAGE       */
+/*############################*/
+
+
+
+
+
+
+/*############################*/
+/*          REPAS             */
+/*############################*/
+
+/**   Titre repas  **/
+.grid7{
+  display : grid;
+  grid-template-columns:1fr;
+  padding: 0px;
+  height: 65px;
+  background-color:rgb(190, 189, 189);
+  margin-top: 50px; 
+  margin-bottom:50px;
+  text-align: center;
+  font-family:'Over the Rainbow', cursive;
+  font-size: 35px;
+  }
+  /**   Titre repas   **/
+
+
+  
+  /**   Hover sur Titre   **/
+  .grid7 p:hover{
+  color: blue;}
+  /**   Hover sur Titre   **/
+  
+  
+  /**  container grid repas (parent)   **/
+  .grid8{
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  margin:2%;
+  height: 250px;
+  }
+  /**   container grid repas (parent) **/
+  
+  
+  
+  
+  /**   photos repas (enfants)   **/
+  .tof6{
+  background-image: url("https://image.noelshack.com/fichiers/2019/10/5/1552043880-bouffe-resize.jpg");
+  background-size: cover;
+  background-position:center;
+  }
+  
+  .tof7{
+  background-image: url("http://media.topito.com/wp-content/uploads/2013/11/1.jpg");
+  background-size: cover;
+  background-position:center;
+  }
+  
+  .tof8{
+  background-image: url("https://i.pinimg.com/originals/d1/88/bc/d188bcd106d2b234a17ff51b04326740.jpg");
+  background-size: cover;
+  background-position:center;
+  }
+  
+  /**  photo repas (enfants)   **/
+  
+  
+  
+  /**   texte repas  (parent) **/
+  
+  .grid9{
+  color:black;
+  font-size: 15px;
+  text-align: center;
+  }
+  /**   texte repas  (parent) **/
+  
+
+
+
+/*############################*/
+/*          REPAS             */
+/*############################*/
+
+
+/*############################*/
+/*   UN PEUPLE ACCUEILLANT    */
+/*############################*/
+
+/**   Titre un peuple accueillant  **/
+.grid10{
+  display : grid;
+  grid-template-columns:1fr;
+  padding: 0px;
+  height: 55px;
+  background-color:rgb(190, 189, 189);
+  margin-top: 50px; 
+  margin-bottom:50px;
+  text-align: center;
+  font-family:'Over the Rainbow', cursive;
+  font-size: 35px;
+  }
+  /**   Titre un peuple accueillant   **/
+
+
+ /**   Hover sur Titre   **/
+ .grid10 p:hover{
+  color: blue;
+  }
+  /**   Hover sur Titre   **/
+
+
+/**  container un peuple accueillant   **/
+.grid11{
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  margin:2%;
+  height: 250px;
+  }
+  /**   container grid un peuple accueillant   **/
+  
+
+
+
+
+
+
+  /**   photos un peuple accueillant  **/
+  .tof9{
+    background-image: url("https://www.lepoint.fr/images/2017/07/25/9549480lpw-9550112-embed-libre-jpg_6042999.jpg");
+    background-size: cover;
+    background-position:center;
+    }
+    
+    .tof10{
+    background-image: url("http://ekladata.com/0_tOq8zXQHSUaWvmKKmtgBLJsAs@532x353.jpg");
+    background-size: cover;
+    background-position:center;
+    }
+    
+    .tof11{
+    background-image: url("https://i1.wp.com/www.geeksandcom.com/wp-content/uploads/2015/06/Sauvageon-Game-Of-thrones-HBO.jpg?ssl=1");
+    background-size: cover;
+    background-position:center;
+    }
+    /**  photo  un peuple accueillant   **  
+  
+
+  
+  /**   texte  un peuple accueillant  **/
+  
+  .grid12{
+  color:black;
+  font-size: 15px;
+  text-align: center;
+  }
+  /**   texte un peuple accueillant  **/
+
+
+
+/*############################*/
+/*   UN PEUPLE ACCUEILLANT    */
+/*############################*/
+
+
+
+/*############################*/
+/*          GALLERIE          */
+/*############################*/
+
+/**   Titre gallerie   **/
+.grid13{
+  display : grid;
+  grid-template-columns:1fr;
+  padding: 0px;
+  height: 65px;
+  background-color:rgb(190, 189, 189);
+  margin-top: 50px; 
+  margin-bottom:50px;
+  text-align: center;
+  font-family:'Over the Rainbow', cursive;
+  font-size: 35px;
+  }
+  /**   Titre gallerie   **/
+
+
+  /**   Hover sur Titre   **/
+.grid13 p:hover{
+  color: blue;
+  }
+  /**   Hover sur Titre   **/
+  
+
+
+
+ /***************  Modal coder en CSS et  JS*****************************/
+
+
+
+  /** Container qui permet de séparer les images entre elles **/
+  .container1 {
+    margin: 10px;
+  }
+ /** Container qui permet de séparer les images entre elles **/
+
+
+
+  /** Class qui permet de configurer le background et l'image une fois qu'elle est agrandie une fois cliquer sur elle **/
+  .modal {
+    padding-top: 10px;
+    padding-right: 350px;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  /** Class qui permet de configurer le background et l'image une fois qu'elle est agrandie une fois cliquer sur elle **/
+
+
+
+
+  /** Container qui permet d'agencer la taille et la disposition de l'image a l'interieur du container **/
+  .modal-content {
+    margin: auto;
+    max-width: 700px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /** Container qui permet d'agencer la taille et la disposition de l'image a l'interieur du container **/
+
+
+
+
+ /**   Webkit qui permet de réaliser un effet de surbrillance sur les photos **/
+    .modal-hover-opacity:hover {
+    -webkit-filter: brightness(150%); 
+    }
+ /**   Webkit qui permet de réaliser un effet de surbrillance sur les photos **/
+
+
+
+ /***************  Modal coder en CSS et  JS*****************************/
+
+
+/*############################*/
+/*          GALLERIE          */
+/*############################*/
+
+
+
+
+
+
+/*############################*/
+/*           FOOTER           */
+/*############################*/
+
+/** Container grid footer **/
+.gridfooter {
+display : grid;
+grid-template-columns: 1fr;
+height: 200px;
+}
+/** Container grid footer **/
+
+
+/** Footer Bootstrap code css **/
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Dancing Script', cursive;
+  }
+
+/** Footer Bootstrap code css **/
+
+
+/*############################*/
+/*             FOOTER         */
+/*############################*/
+    
+
+/*############################*/
+/*     MEDIA QUERIES          */
+/*############################*/
+
+
+
+
+
+
+
+/** media querie pour Smartphone premiere génération **/ 
+
+@media (max-width: 479px){
+
+h1{
+font-size: 17px;
+margin-left: 15px;
+}
+
+.navbar li a{
+
+font-size: 9px;
+}
+
+nav{
+
+  display: flex;
+  justify-content: center;
+}
+
+.containermodal{
+
+  margin-left: 37px;
+}
+   
+
+.dropdown li{
+font-size: 9px;
+}
+
+.dropdown {
+
+  max-height: 15px; 
+   }
+}
+/** media querie pour Smartphone premiere génération **/ 
+
+
+
+
+/** media querie pour Smartphone plus modernes et ipad portraits **/ 
+
+
+@media (min-width:480px) and (max-width:768px){
+
+  h1{
+  font-size: 1px;
+  }
+  
+  .navbar li a{
+
+    font-size: 9px;
+    }
+    
+    nav{
+    
+      display: flex;
+      justify-content: center;
+    }
+
+
+  .dropdown li{
+  font-size: 24px;
+  }
+  
+.container1{
+
+margin-left: 45px;
+}
+ 
+  .dropdown {
+  max-height: 27px; 
+  }
+  }
+
+/** media querie pour Smartphone plus modernes et ipad portraits **/ 
+
+
+
+
+@media (min-width:769px) and (max-width:1024px){
+  
+  h1{
+    font-size: 35px;
+    }
+    
+    nav{
+  
+      display: flex;
+      justify-content: center;
+    }
+  
+    .navbar li a{
+    font-size: 24px;
+    }
+  
+    
+   
+  
+    .dropdown li{
+    font-size: 24px;
+    }
+    
+  .container1{
+  
+  margin-left: 20px;
+  }
+   
+    .dropdown {
+    max-height: 27px; 
+    }
+    }
+
+}
+
+/*############################*/
+/*     MEDIA QUERIES          */
+/*############################*/
